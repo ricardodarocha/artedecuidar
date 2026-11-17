@@ -662,7 +662,6 @@ CREATE TABLE IF NOT EXISTS recebimentos(id SERIAL PRIMARY KEY,orcamento_id INT R
 ALTER TABLE tabelas_preco ADD COLUMN IF NOT EXISTS categoria TEXT DEFAULT 'DIURNO';
 ALTER TABLE orcamentos ADD COLUMN IF NOT EXISTS codigo TEXT;
 CREATE UNIQUE INDEX IF NOT EXISTS orc_codigo_uq ON orcamentos(codigo);
-UPDATE usuarios SET pode_cadastrar=true WHERE login='ricardo' AND pode_cadastrar IS NULL;`)
     /* codigo unico: 4 letras A-Z + 2 numeros 4-9 embaralhados + categoria + ultima data (ex.: K7QX5B diurno 17out) */
     const rndUid = () => {
       const L = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', a = []; for (let i = 0; i < 4; i++)a.push(L[Math.random() * 26 | 0]); for (let i = 0; i < 2; i++)a.push(String(4 + (Math.random() * 6 | 0)))
