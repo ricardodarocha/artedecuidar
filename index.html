@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arte de Cuidar</title>
+  <link rel="icon"
+    href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIyMC44MzIyIDIwLjQxNDkgNTAwLjQ2MDEgNDUwLjAyIiB3aWR0aD0iMzk4LjQ2MDEiIGhlaWdodD0iMzUwLjAyIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHN0eWxlPgogICAgLnBhdGgyNCB7CiAgICBzdHJva2U6ICM0NEIyRTY7CiAgICBzdHJva2UtbGluZWNhcDogYnV0dDsKICAgIHN0cm9rZS1saW5lam9pbjogbWl0ZXI7CiAgICBzdHJva2Utd2lkdGg6IDEwOwogICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOwogICAgZmlsbDogbm9uZTsKICAgIHN0cm9rZS1kYXNoYXJyYXk6IG5vbmU7CiAgICBzdHJva2Utb3BhY2l0eTogMTsKICAgIH0KICA8L3N0eWxlPgogIDxwYXRoIAogIGNsYXNzPSJwYXRoMjQiCiAgICBkPSJtIDAsMCBjIDIuNDA4LDAuNjQzIDQuMTIyLDIuMTM4IDUuMzc5LDQuMjg3IDEuMTM1LDEuOTQgMS44MzksNC4xMDEgMi45MDQsNi4wNzkgMC43NDgsMS4zODkgMS42ODcsMi42NyAyLjc3LDMuODE1IDUuMzg2LDUuNjg4IDEzLjg1Niw3LjU0OCAyMS4wNDgsNC4zNzIgNS45NzgsLTIuNjQxIDkuMzU4LC04Ljk0MyA5Ljg2MywtMTUuMjYxIDAuODE2LC0xMC4yMTMgLTQuMTI3LC0yMC4zNDEgLTExLjcwOSwtMjguNDgyIC0wLjQ1MywtMC40ODcgLTAuOTI0LC0wLjk1NyAtMS40MDYsLTEuNDE2IC0wLjUyOCwtMC41MDIgLTEuMDY5LC0wLjk5MSAtMS42MTksLTEuNDcgLTAuNTg5LC0wLjUxMyAtMS4xODgsLTEuMDE1IC0xLjc5NSwtMS41MDggLTAuNjM4LC0wLjUxOSAtMS4yODQsLTEuMDI4IC0xLjkzNSwtMS41MyAtMC42NzQsLTAuNTE4IC0xLjM1NCwtMS4wMjkgLTIuMDM5LC0xLjUzMyAtMC42OTcsLTAuNTEzIC0xLjQsLTEuMDE5IC0yLjEwNiwtMS41MiAtMC43MDgsLTAuNTAyIC0xLjQyMSwtMC45OTkgLTIuMTM2LC0xLjQ5IC0wLjcwNywtMC40ODYgLTEuNDE4LC0wLjk2NyAtMi4xMzEsLTEuNDQ0IC0wLjY5MywtMC40NjMgLTEuMzksLTAuOTIzIC0yLjA4OCwtMS4zNzkgLTAuNjY4LC0wLjQzNiAtMS4zMzgsLTAuODY4IC0yLjAwOSwtMS4yOTggLTAuNjMsLTAuNDAyIC0xLjI2MSwtMC44MDIgLTEuODk0LC0xLjIgLTAuNTgsLTAuMzY0IC0xLjE2LC0wLjcyNSAtMS43NDIsLTEuMDg1IC0wLjUxNywtMC4zMTkgLTEuNTU0LC0wLjk1MyAtMS41NTQsLTAuOTUzIDAsMCAtMC41NTUsLTAuMzM3IC0wLjgzMywtMC41MDUgLTAuMjU2LC0wLjE1NCAtMC41MTksLTAuMjkgLTAuNzY0LC0wLjQ1OCAtMC41MDIsLTAuMzQ3IC0xLjAyMSwtMC42NzIgLTEuNTUyLC0wLjk3NCAtMC41NDgsLTAuMzExIC0xLjExLC0wLjU5NyAtMS42ODQsLTAuODU3IC0wLjU2NSwtMC4yNTUgLTEuMTA0LC0wLjU3NCAtMS42NjMsLTAuODUgLTAuMTQ2LC0wLjA3MyAtMC4yOTMsLTAuMTQ1IC0wLjQ0MSwtMC4yMTcgLTEuMTM2LC0wLjU1MSAtMi4yODcsLTEuMDY5IC0zLjQzNSwtMS41OTUgLTAuOTI3LC0wLjQyNSAtMS44NTIsLTAuODU0IC0yLjc2NSwtMS4zMSAtMy4wNzIsLTEuNTMzIC02LjE3OSwtMi45OTkgLTkuMjk4LC00LjQzMiAtNi4yMzQsLTIuODY0IC0xMi41NTgsLTUuNTM5IC0xOC45OTIsLTcuOTIzIC02LjUxNCwtMi40MTMgLTEzLjI3NiwtNC40NjYgLTIwLjI2NSwtNC43MzcgLTUuODQ0LC0wLjIyNyAtMTEuOTA0LDAuOTU4IC0xNi45OTksMy45MDQgLTEuMjgyLDAuNzQyIC0yLjUsMS41OTYgLTMuNjIsMi41NjUgLTEuNDk4LDEuMjk3IC0xLjI4NSwyLjExNCAtMS4zMjEsNC4wNTUgLTAuMDY1LDMuNTIxIC0wLjIyNiw3LjA0IC0wLjIyNiwxMC41NjEgdiAxMy4wODQgMjEuMjc1IGMgMCw3LjAyMSAwLjA5MywxNC4wMjcgMC4yNzIsMjEuMDQ2IDAuMDM1LDEuMzczIDAuMDgsMi43OTIgMC41NTcsNC4wOTUgMC40MiwxLjE0OCAxLjE4NSwyLjI4OCAxLjg1NiwzLjMwNyAzLjIxNSw0Ljg4NCA4LjEwNCw4LjQzNSAxMi44OTcsMTEuNjQzIDExLjI4NSw3LjU1MyAyMi41NywxNS4xMDYgMzMuODU1LDIyLjY1OCA1LjUyNSwzLjY5OCAxMS4wODMsNy4zNTEgMTYuNTY3LDExLjEwOCAxLjg3MywxLjI4MiAzLjY2NSwyLjY5NCA1LjY1OSwzLjc4OSAxLjU3NywwLjg2OCAzLjMxLDEuNTkgNS4xMDIsMS41OTkgMC40OTIsMC4wMDMgMC45OSwtMC4wNDkgMS40ODksLTAuMTY2IDEuMTAxLC0wLjI1OCAyLjE5NCwtMC43NjcgMy4xOTEsLTEuMjk2IDEuMDIzLC0wLjU0MyAxLjk5NSwtMS4xNzcgMi45NDYsLTEuODM2IDAuOTk0LC0wLjY4OCAxLjk2NywtMS40MDcgMi45NjUsLTIuMDkgMC4zNDcsLTAuMjM3IDAuNjk0LC0wLjQ3NSAxLjA0MSwtMC43MTEgMi44OTUsLTEuOTczIDUuODA3LC0zLjkyIDguNzIzLC01Ljg2MSAyLjgxMSwtMS44NzMgNS41NjUsLTMuOTQxIDguNTQzLC01LjUxOCAwLjQ1NSwtMC4yNDEgMC45MjMsLTAuNDg2IDEuNDM0LC0wLjU0MyAwLjUxMiwtMC4wNTcgMS4xMDIsMC4xMDkgMS4zNzEsMC41NDcgdiA1LjU3NSBjIDAsMS44MDQgLTAuMDY1LDMuNzQ1IDAuNjE5LDUuNDUzIDAuNTU4LDEuMzk3IDEuNjc3LDIuODAyIDMuMzE0LDIuODAyIGggNS45NTQgYyAyLjI0NCwwIDQuNzcsLTAuMDk2IDcuMDEyLDAgaCA1Ljk1NCBjIDUuMDIsMCAzLjc2NSwtOC43NzQgMy43NjUsLTEyLjA0NiBWIDM2Ljk1IDM0Ljc0NiBjIC0wLjA1OCwtMS41MDIgMC4wMTksLTMuMDg0IDAuODA2LC00LjM2NSAwLjgxOCwtMS4zMyAyLjM2NywtMi4wMTkgMy42MzIsLTIuODQ1IDEuNDM3LC0wLjkzOCAyLjgzMiwtMS45NCA0LjE2NSwtMy4wMiAyLjY2MSwtMi4xNTUgNS4wOTksLTQuNjMxIDYuOTg3LC03LjQ5OCAwLjY3LC0xLjAxOSAxLjQzNSwtMi4xNTkgMS44NTUsLTMuMzA3IDAuNDc4LC0xLjMwMyAwLjUyMiwtMi43MjIgMC41NTcsLTQuMDk1IDAuMTc5LC03LjAxOSAwLjI3MiwtMTQuMDI1IDAuMjcyLC0yMS4wNDYgdiAtMjEuMjc1IC0xMy4wODQgYyAwLC0zLjUyMSAtMC4xNjEsLTcuMDQgLTAuMjI2LC0xMC41NjEgLTAuMDM2LC0xLjk0MSAwLjE3NywtMi43NTggLTEuMzIxLC00LjA1NSAtMS4xMiwtMC45NjkgLTIuMzM4LC0xLjgyMyAtMy42MiwtMi41NjUgLTUuMDk0LC0yLjk0NiAtMTEuMTU0LC00LjEzMSAtMTYuOTk5LC0zLjkwNCAtNy40NjgsMC4yOSAtMTQuNjYxLDIuNjA4IC0yMS41OTYsNS4yMzYgLTIuOTgzLDEuMTMxIC01LjgzLDIuMjk3IC04Ljg4MiwzLjIwNiAtMy4xMzYsMC45MzMgLTYuMjM2LDEuOTg2IC05LjI5MywzLjE1NCAtNi4wNTEsMi4zMTIgLTExLjkzMSw1LjA3MyAtMTcuNTc3LDguMjUxIC01LjI3NywyLjk3IC0xMC4zNDksNi4zMDQgLTE1LjE2Niw5Ljk3NSAtNC44MDMsMy42NiAtOS41MTMsNy40MzkgLTEzLjYzMiwxMS44NjIgLTcuNTgxLDguMTQxIC0xMi41MjQsMTguMjY5IC0xMS43MDgsMjguNDgyIDAuNTA1LDYuMzE4IDMuODg1LDEyLjYyIDkuODYzLDE1LjI2MSA3LjE5MSwzLjE3NiAxNS42NjEsMS4zMTYgMjEuMDQ3LC00LjM3MiAxLjA4MywtMS4xNDUgMi4wMjMsLTIuNDI2IDIuNzcsLTMuODE1IEMgLTkuOTcyLDguMzg4IC05LjI2OCw2LjIyNyAtOC4xMzMsNC4yODcgLTYuODc2LDIuMTM4IC01LjE2MiwwLjY0MyAtMi43NTQsMCAtMS43OSwtMC4yNTcgLTAuOTY0LC0wLjI1NyAwLDAgWiIKICAgIHRyYW5zZm9ybT0ibWF0cml4KDIuNTk4MjAwODE0MzU4MDUxNSwgMCwgMCwgLTIuNTk4MjAwODE0MzU4MDUxNSwgMjYxLjYzOTk2MzAxNjM3OTYsIDIzOS42MTIyMjk0MzUwNjQzNikiIC8+Cjwvc3ZnPg==">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    :root {
+      --p: #1d8ac4;
+      --p2: #e6f5fc;
+      --t: #2b2b3a;
+      --m: #6b6b7e;
+      --b: #e6e1e6;
+      --bg: #f7fcff;
+      --ok: #2e9e6a;
+      --er: #d6455d
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, Segoe UI, Arial, sans-serif;
+      color: var(--t);
+      background: var(--bg)
+    }
+
+    button {
+      cursor: pointer;
+      border: 0;
+      border-radius: 8px;
+      padding: 9px 16px;
+      background: var(--p);
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px
+    }
+
+    button.s {
+      background: #fff;
+      color: var(--p);
+      border: 1px solid var(--p)
+    }
+
+    button.d {
+      background: var(--er)
+    }
+
+    button.sm {
+      padding: 5px 10px;
+      font-size: 12px
+    }
+
+    input,
+    select {
+      padding: 9px;
+      border: 1px solid var(--b);
+      border-radius: 8px;
+      font-size: 14px;
+      background: #fff;
+      width: 100%
+    }
+
+    label {
+      font-size: 12px;
+      color: var(--m);
+      display: block;
+      margin-bottom: 3px
+    }
+
+    .hide {
+      display: none !important
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: flex-end
+    }
+
+    .row>div {
+      flex: 1;
+      min-width: 140px
+    }
+
+    nav.top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 6vw;
+      background: #fff;
+      border-bottom: 1px solid var(--b)
+    }
+
+    .logo {
+      font-weight: 800;
+      color: var(--p);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .logo img {
+      height: 38px
+    }
+
+    .sb .logo {
+      font-size: 16px
+    }
+
+    .sb .logo img {
+      height: 30px
+    }
+
+    .hero .lg {
+      height: 120px;
+      margin-bottom: 10px
+    }
+
+    svg.i {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vertical-align: -3px
+    }
+
+    .ico svg {
+      width: 30px;
+      height: 30px;
+      color: var(--p)
+    }
+
+    .fbtn {
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid var(--p);
+      color: var(--p);
+      border-radius: 8px;
+      padding: 9px 16px;
+      font-weight: 600;
+      font-size: 14px;
+      background: #fff
+    }
+
+    .fbtn input {
+      display: none
+    }
+
+    .hero {
+      padding: 80px 6vw;
+      text-align: center;
+      background: linear-gradient(135deg, #e6f5fc, #f6fbff)
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 52px);
+      margin: 0 0 12px
+    }
+
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 24px;
+      color: var(--m);
+      font-size: 18px
+    }
+
+    .feat {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      padding: 50px 6vw
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--b);
+      border-radius: 14px;
+      padding: 18px
+    }
+
+    .card h3 {
+      margin: 6px 0
+    }
+
+    .ico {
+      font-size: 30px
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: #0006;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9
+    }
+
+    .modal .box {
+      background: #fff;
+      border-radius: 14px;
+      padding: 24px;
+      width: min(380px, 92vw)
+    }
+
+    .tabs {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 14px
+    }
+
+    .tabs button {
+      flex: 1
+    }
+
+    #app {
+      display: flex;
+      min-height: 100vh
+    }
+
+    .sb {
+      width: 210px;
+      background: #fff;
+      border-right: 1px solid var(--b);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px
+    }
+
+    .sb button {
+      background: transparent;
+      color: var(--t);
+      text-align: left
+    }
+
+    .sb button.on {
+      background: var(--p2);
+      color: var(--p)
+    }
+
+    main {
+      flex: 1;
+      padding: 24px;
+      min-width: 0
+    }
+
+    h2 {
+      margin-top: 0
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 14px
+    }
+
+    th,
+    td {
+      padding: 8px;
+      border-bottom: 1px solid var(--b);
+      text-align: left
+    }
+
+    th {
+      background: var(--p2)
+    }
+
+    .tw {
+      overflow-x: auto;
+      margin: 12px 0
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 14px
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--p2);
+      color: var(--p)
+    }
+
+    .tag.f {
+      background: #fff0d6;
+      color: #a86400
+    }
+
+    .big {
+      font-size: 20px;
+      font-weight: 700
+    }
+
+    .ok {
+      color: var(--ok)
+    }
+
+    .er {
+      color: var(--er)
+    }
+
+    .mut {
+      color: var(--m);
+      font-size: 13px
+    }
+
+    .sec {
+      margin: 26px 0;
+      padding-top: 10px
+    }
+
+    @media(max-width:700px) {
+      #app {
+        flex-direction: column
+      }
+
+      .sb {
+        width: auto;
+        flex-direction: row;
+        overflow-x: auto
+      }
+    }
+
+    @media print {
+
+      .sb,
+      nav,
+      .noprint,
+      #cards {
+        display: none !important
+      }
+
+      main {
+        padding: 0
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="land">
+    <nav class="top"><span class="logo"><img class="lg" alt="">Arte de Cuidar</span><button class="s"
+        onclick="openAuth('login')">Entrar</button></nav>
+    <section class="hero"><img class="lg" alt="Arte de Cuidar">
+      <h1>Bem-vindo à Arte de Cuidar</h1>
+      <p>Enfermagem Baby Care: cuidado profissional, carinhoso e seguro para o seu bebê. Organize orçamentos de
+        plantões, recebimentos e relatórios em um só lugar.</p><button onclick="openAuth('reg')">Aderir</button>
+    </section>
+    <section class="feat">
+      <div class="card">
+        <div class="ico"><i data-i="file"></i></div>
+        <h3>Orçamentos</h3>
+        <p class="mut">Monte orçamentos por dia e pacote, com cálculo automático de fim de semana e feriado.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><i data-i="tag"></i></div>
+        <h3>Tabelas de preço</h3>
+        <p class="mut">Várias tabelas, preço normal e preço especial, importação e exportação em TXT.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><i data-i="calendar"></i></div>
+        <h3>Feriados</h3>
+        <p class="mut">Cadastre feriados municipais, nacionais e outros.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><i data-i="chart"></i></div>
+        <h3>Relatório de recebidos</h3>
+        <p class="mut">Veja total, recebido e restante por período, pronto para imprimir.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><i data-i="download"></i></div>
+        <h3>PDF do orçamento</h3>
+        <p class="mut">Documento limpo para enviar ao cliente.</p>
+      </div>
+    </section>
+  </div>
+
+  <div id="modal" class="modal hide">
+    <div class="box">
+      <div class="tabs"><button id="bl" onclick="authTab('login')">Entrar</button><button id="br" class="s"
+          onclick="authTab('reg')">Aderir</button></div>
+      <div id="fn" class="hide"><label>Nome completo</label><input id="a_nome"><br><br></div>
+      <label>Usuário</label><input id="a_login"><br><br><label>Senha</label><input id="a_senha" type="password"><br><br>
+      <div id="a_err" class="er mut"></div>
+      <div class="row"><button onclick="submitAuth()" style="flex:1">Confirmar</button><button class="s"
+          onclick="$('modal').classList.add('hide')">Fechar</button></div>
+    </div>
+  </div>
+
+  <div id="app" class="hide">
+    <aside class="sb">
+      <div class="logo"><img class="lg" alt="">Arte de Cuidar</div>
+      <div class="mut" id="who"></div>
+      <button data-t="dash" class="on"><i data-i="dash"></i> Dashboard</button><button data-t="orc"><i
+          data-i="file"></i> Orçamento</button><button data-t="cfg"><i data-i="settings"></i> Configurar</button>
+      <button class="s" onclick="logout()" style="margin-top:auto"><i data-i="logout"></i> Sair</button>
+    </aside>
+    <main>
+      <section id="t-dash">
+        <h2>Meus orçamentos</h2>
+        <div id="cards" class="grid"></div>
+        <div class="sec" id="relbox">
+          <h2>Relatório de recebidos</h2>
+          <div class="row noprint">
+            <div><label>De</label><input type="date" id="r_de"></div>
+            <div><label>Até</label><input type="date" id="r_ate"></div>
+            <div><button onclick="relatorio()">Gerar</button> <button class="s" onclick="window.print()"><i
+                  data-i="printer"></i> Imprimir</button></div>
+          </div>
+          <div id="rel"></div>
+        </div>
+      </section>
+
+      <section id="t-orc" class="hide">
+        <h2 id="orcTitle">Novo orçamento</h2>
+        <div class="row">
+          <div><label>Nome do cliente</label><input id="o_cli"></div>
+          <div><label>Nome do funcionário</label><input id="o_fun"></div>
+          <div><label>Tabela de preço</label><select id="o_tab" onchange="loadProdutos()"></select></div>
+        </div>
+        <div class="tw">
+          <table>
+            <thead>
+              <tr>
+                <th>Dia</th>
+                <th>Período</th>
+                <th>Tipo</th>
+                <th>Preço</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="o_itens"></tbody>
+            <tfoot>
+              <tr>
+                <th colspan="3">Total</th>
+                <th id="o_total">R$ 0,00</th>
+                <th colspan="2"></th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="row">
+          <div><label>Data</label><input type="date" id="o_data"></div>
+          <div style="flex:2"><label>Produto</label><select id="o_prod"></select></div>
+          <div><button onclick="addItem()">Adicionar</button></div>
+        </div>
+        <br>
+        <div class="row">
+          <div><button onclick="saveOrc()"><i data-i="save"></i> Salvar orçamento</button> <button class="s"
+              onclick="newOrc()">Novo / limpar</button></div>
+        </div>
+      </section>
+
+      <section id="t-cfg" class="hide">
+        <h2>Configurar</h2>
+        <div class="card">
+          <h3>Meu perfil</h3>
+          <div class="row">
+            <div><label>Nome</label><input id="p_nome"></div>
+            <div><label>Tabela de preço padrão</label><select id="p_tab"></select></div>
+            <div><button onclick="saveProfile()">Salvar</button></div>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="card">
+            <h3>Tabela de preços</h3>
+            <div class="row">
+              <div><label>Tabela</label><select id="c_tab" onchange="listPrecos()"></select></div>
+              <div><label>Tipo de orçamento</label><select id="c_cat" onchange="saveCat()">
+                  <option>DIURNO</option>
+                  <option>NOTURNO</option>
+                  <option>PLANTÃO</option>
+                </select></div>
+              <div><button class="s" onclick="newTab()">+ Nova tabela</button> <button class="d sm"
+                  onclick="delTab()">Excluir</button></div>
+            </div>
+            <div class="tw">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Produto</th>
+                    <th>Tipo</th>
+                    <th>Preço 1</th>
+                    <th>Preço 2 (sex/sáb/dom/feriado)</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="c_precos"></tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div><label>Produto</label><input id="c_prod" placeholder="24 h"></div>
+              <div style="flex:2"><label>Tipo</label><input id="c_tipo" placeholder="Plantão Domiciliar"></div>
+              <div><label>Preço 1</label><input id="c_p1" type="number" step="0.01"></div>
+              <div><label>Preço 2</label><input id="c_p2" type="number" step="0.01"></div>
+              <div><button onclick="addPreco()">Adicionar</button></div>
+            </div>
+            <br>
+            <div class="row">
+              <div><button class="s" onclick="exportTxt()"><i data-i="download"></i> Exportar TXT</button> <label
+                  class="fbtn"><i data-i="upload"></i> Importar TXT<input type="file" accept=".txt,text/plain"
+                    onchange="importTxt(this)"></label></div>
+            </div>
+            <p class="mut">Formato TXT: primeira linha opcional #categoria;DIURNO, depois produto;tipo;preco1;preco2
+              (uma linha por registro)</p>
+          </div>
+        </div>
+
+        <div class="sec hide" id="cfg-users">
+          <div class="card">
+            <h3>Usuários</h3>
+            <div class="tw">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Usuário</th>
+                    <th>Nome</th>
+                    <th>Tabela padrão</th>
+                    <th>Cadastra usuários</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="c_users"></tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div><label>Nome</label><input id="u_nome"></div>
+              <div><label>Usuário (login)</label><input id="u_login"></div>
+              <div><label>Senha</label><input id="u_senha" type="password"></div>
+              <div><label>Tabela de preço padrão</label><select id="u_tab"></select></div>
+              <div><label>Pode cadastrar novos usuários?</label><select id="u_perm">
+                  <option value="0">Não</option>
+                  <option value="1">Sim</option>
+                </select></div>
+              <div><button onclick="addUser()">Adicionar</button></div>
+            </div>
+            <br>
+            <div class="row">
+              <div><button class="s" onclick="exportUsers()"><i data-i="download"></i> Exportar usuários TXT</button>
+                <label class="fbtn"><i data-i="upload"></i> Importar usuários TXT<input type="file"
+                    accept=".txt,text/plain" onchange="importUsers(this)"></label></div>
+            </div>
+            <p class="mut">Formato TXT: login;senha;nome;tabela;permissao (1 = pode cadastrar usuários, 0 = não).
+              Usuários existentes são atualizados.</p>
+          </div>
+        </div>
+
+        <div class="sec">
+          <div class="card">
+            <h3>Feriados</h3>
+            <div class="tw">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tipo</th>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="c_fer"></tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div><label>Tipo</label><select id="f_tipo">
+                  <option>municipal</option>
+                  <option>nacional</option>
+                  <option>outro</option>
+                </select></div>
+              <div style="flex:2"><label>Nome do feriado</label><input id="f_nome"></div>
+              <div><label>Data</label><input type="date" id="f_data"></div>
+              <div><button onclick="addFer()">Adicionar</button></div>
+            </div>
+            <p class="mut">Municipais e nacionais repetem todo ano (mesmo dia/mês). "Outro" vale só na data exata.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module">
+    import { PGlite } from 'https://cdn.jsdelivr.net/npm/@electric-sql/pglite/dist/index.js'
+    const $ = id => document.getElementById(id), W = window
+    W.$ = $
+    const db = new PGlite('idb://babycare-db')
+    const q = async (s, p = []) => (await db.query(s, p)).rows
+    const brl = v => Number(v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]))
+    const fd = d => d ? d.split('-').reverse().join('/') : '—'
+    const today = () => new Date().toISOString().slice(0, 10)
+    const DIAS = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb']
+    const LOGO = 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIyMC44MzIyIDIwLjQxNDkgNTAwLjQ2MDEgNDUwLjAyIiB3aWR0aD0iMzk4LjQ2MDEiIGhlaWdodD0iMzUwLjAyIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHN0eWxlPgogICAgLnBhdGgyNCB7CiAgICBzdHJva2U6ICM0NEIyRTY7CiAgICBzdHJva2UtbGluZWNhcDogYnV0dDsKICAgIHN0cm9rZS1saW5lam9pbjogbWl0ZXI7CiAgICBzdHJva2Utd2lkdGg6IDEwOwogICAgc3Ryb2tlLW1pdGVybGltaXQ6IDEwOwogICAgZmlsbDogbm9uZTsKICAgIHN0cm9rZS1kYXNoYXJyYXk6IG5vbmU7CiAgICBzdHJva2Utb3BhY2l0eTogMTsKICAgIH0KICA8L3N0eWxlPgogIDxwYXRoIAogIGNsYXNzPSJwYXRoMjQiCiAgICBkPSJtIDAsMCBjIDIuNDA4LDAuNjQzIDQuMTIyLDIuMTM4IDUuMzc5LDQuMjg3IDEuMTM1LDEuOTQgMS44MzksNC4xMDEgMi45MDQsNi4wNzkgMC43NDgsMS4zODkgMS42ODcsMi42NyAyLjc3LDMuODE1IDUuMzg2LDUuNjg4IDEzLjg1Niw3LjU0OCAyMS4wNDgsNC4zNzIgNS45NzgsLTIuNjQxIDkuMzU4LC04Ljk0MyA5Ljg2MywtMTUuMjYxIDAuODE2LC0xMC4yMTMgLTQuMTI3LC0yMC4zNDEgLTExLjcwOSwtMjguNDgyIC0wLjQ1MywtMC40ODcgLTAuOTI0LC0wLjk1NyAtMS40MDYsLTEuNDE2IC0wLjUyOCwtMC41MDIgLTEuMDY5LC0wLjk5MSAtMS42MTksLTEuNDcgLTAuNTg5LC0wLjUxMyAtMS4xODgsLTEuMDE1IC0xLjc5NSwtMS41MDggLTAuNjM4LC0wLjUxOSAtMS4yODQsLTEuMDI4IC0xLjkzNSwtMS41MyAtMC42NzQsLTAuNTE4IC0xLjM1NCwtMS4wMjkgLTIuMDM5LC0xLjUzMyAtMC42OTcsLTAuNTEzIC0xLjQsLTEuMDE5IC0yLjEwNiwtMS41MiAtMC43MDgsLTAuNTAyIC0xLjQyMSwtMC45OTkgLTIuMTM2LC0xLjQ5IC0wLjcwNywtMC40ODYgLTEuNDE4LC0wLjk2NyAtMi4xMzEsLTEuNDQ0IC0wLjY5MywtMC40NjMgLTEuMzksLTAuOTIzIC0yLjA4OCwtMS4zNzkgLTAuNjY4LC0wLjQzNiAtMS4zMzgsLTAuODY4IC0yLjAwOSwtMS4yOTggLTAuNjMsLTAuNDAyIC0xLjI2MSwtMC44MDIgLTEuODk0LC0xLjIgLTAuNTgsLTAuMzY0IC0xLjE2LC0wLjcyNSAtMS43NDIsLTEuMDg1IC0wLjUxNywtMC4zMTkgLTEuNTU0LC0wLjk1MyAtMS41NTQsLTAuOTUzIDAsMCAtMC41NTUsLTAuMzM3IC0wLjgzMywtMC41MDUgLTAuMjU2LC0wLjE1NCAtMC41MTksLTAuMjkgLTAuNzY0LC0wLjQ1OCAtMC41MDIsLTAuMzQ3IC0xLjAyMSwtMC42NzIgLTEuNTUyLC0wLjk3NCAtMC41NDgsLTAuMzExIC0xLjExLC0wLjU5NyAtMS42ODQsLTAuODU3IC0wLjU2NSwtMC4yNTUgLTEuMTA0LC0wLjU3NCAtMS42NjMsLTAuODUgLTAuMTQ2LC0wLjA3MyAtMC4yOTMsLTAuMTQ1IC0wLjQ0MSwtMC4yMTcgLTEuMTM2LC0wLjU1MSAtMi4yODcsLTEuMDY5IC0zLjQzNSwtMS41OTUgLTAuOTI3LC0wLjQyNSAtMS44NTIsLTAuODU0IC0yLjc2NSwtMS4zMSAtMy4wNzIsLTEuNTMzIC02LjE3OSwtMi45OTkgLTkuMjk4LC00LjQzMiAtNi4yMzQsLTIuODY0IC0xMi41NTgsLTUuNTM5IC0xOC45OTIsLTcuOTIzIC02LjUxNCwtMi40MTMgLTEzLjI3NiwtNC40NjYgLTIwLjI2NSwtNC43MzcgLTUuODQ0LC0wLjIyNyAtMTEuOTA0LDAuOTU4IC0xNi45OTksMy45MDQgLTEuMjgyLDAuNzQyIC0yLjUsMS41OTYgLTMuNjIsMi41NjUgLTEuNDk4LDEuMjk3IC0xLjI4NSwyLjExNCAtMS4zMjEsNC4wNTUgLTAuMDY1LDMuNTIxIC0wLjIyNiw3LjA0IC0wLjIyNiwxMC41NjEgdiAxMy4wODQgMjEuMjc1IGMgMCw3LjAyMSAwLjA5MywxNC4wMjcgMC4yNzIsMjEuMDQ2IDAuMDM1LDEuMzczIDAuMDgsMi43OTIgMC41NTcsNC4wOTUgMC40MiwxLjE0OCAxLjE4NSwyLjI4OCAxLjg1NiwzLjMwNyAzLjIxNSw0Ljg4NCA4LjEwNCw4LjQzNSAxMi44OTcsMTEuNjQzIDExLjI4NSw3LjU1MyAyMi41NywxNS4xMDYgMzMuODU1LDIyLjY1OCA1LjUyNSwzLjY5OCAxMS4wODMsNy4zNTEgMTYuNTY3LDExLjEwOCAxLjg3MywxLjI4MiAzLjY2NSwyLjY5NCA1LjY1OSwzLjc4OSAxLjU3NywwLjg2OCAzLjMxLDEuNTkgNS4xMDIsMS41OTkgMC40OTIsMC4wMDMgMC45OSwtMC4wNDkgMS40ODksLTAuMTY2IDEuMTAxLC0wLjI1OCAyLjE5NCwtMC43NjcgMy4xOTEsLTEuMjk2IDEuMDIzLC0wLjU0MyAxLjk5NSwtMS4xNzcgMi45NDYsLTEuODM2IDAuOTk0LC0wLjY4OCAxLjk2NywtMS40MDcgMi45NjUsLTIuMDkgMC4zNDcsLTAuMjM3IDAuNjk0LC0wLjQ3NSAxLjA0MSwtMC43MTEgMi44OTUsLTEuOTczIDUuODA3LC0zLjkyIDguNzIzLC01Ljg2MSAyLjgxMSwtMS44NzMgNS41NjUsLTMuOTQxIDguNTQzLC01LjUxOCAwLjQ1NSwtMC4yNDEgMC45MjMsLTAuNDg2IDEuNDM0LC0wLjU0MyAwLjUxMiwtMC4wNTcgMS4xMDIsMC4xMDkgMS4zNzEsMC41NDcgdiA1LjU3NSBjIDAsMS44MDQgLTAuMDY1LDMuNzQ1IDAuNjE5LDUuNDUzIDAuNTU4LDEuMzk3IDEuNjc3LDIuODAyIDMuMzE0LDIuODAyIGggNS45NTQgYyAyLjI0NCwwIDQuNzcsLTAuMDk2IDcuMDEyLDAgaCA1Ljk1NCBjIDUuMDIsMCAzLjc2NSwtOC43NzQgMy43NjUsLTEyLjA0NiBWIDM2Ljk1IDM0Ljc0NiBjIC0wLjA1OCwtMS41MDIgMC4wMTksLTMuMDg0IDAuODA2LC00LjM2NSAwLjgxOCwtMS4zMyAyLjM2NywtMi4wMTkgMy42MzIsLTIuODQ1IDEuNDM3LC0wLjkzOCAyLjgzMiwtMS45NCA0LjE2NSwtMy4wMiAyLjY2MSwtMi4xNTUgNS4wOTksLTQuNjMxIDYuOTg3LC03LjQ5OCAwLjY3LC0xLjAxOSAxLjQzNSwtMi4xNTkgMS44NTUsLTMuMzA3IDAuNDc4LC0xLjMwMyAwLjUyMiwtMi43MjIgMC41NTcsLTQuMDk1IDAuMTc5LC03LjAxOSAwLjI3MiwtMTQuMDI1IDAuMjcyLC0yMS4wNDYgdiAtMjEuMjc1IC0xMy4wODQgYyAwLC0zLjUyMSAtMC4xNjEsLTcuMDQgLTAuMjI2LC0xMC41NjEgLTAuMDM2LC0xLjk0MSAwLjE3NywtMi43NTggLTEuMzIxLC00LjA1NSAtMS4xMiwtMC45NjkgLTIuMzM4LC0xLjgyMyAtMy42MiwtMi41NjUgLTUuMDk0LC0yLjk0NiAtMTEuMTU0LC00LjEzMSAtMTYuOTk5LC0zLjkwNCAtNy40NjgsMC4yOSAtMTQuNjYxLDIuNjA4IC0yMS41OTYsNS4yMzYgLTIuOTgzLDEuMTMxIC01LjgzLDIuMjk3IC04Ljg4MiwzLjIwNiAtMy4xMzYsMC45MzMgLTYuMjM2LDEuOTg2IC05LjI5MywzLjE1NCAtNi4wNTEsMi4zMTIgLTExLjkzMSw1LjA3MyAtMTcuNTc3LDguMjUxIC01LjI3NywyLjk3IC0xMC4zNDksNi4zMDQgLTE1LjE2Niw5Ljk3NSAtNC44MDMsMy42NiAtOS41MTMsNy40MzkgLTEzLjYzMiwxMS44NjIgLTcuNTgxLDguMTQxIC0xMi41MjQsMTguMjY5IC0xMS43MDgsMjguNDgyIDAuNTA1LDYuMzE4IDMuODg1LDEyLjYyIDkuODYzLDE1LjI2MSA3LjE5MSwzLjE3NiAxNS42NjEsMS4zMTYgMjEuMDQ3LC00LjM3MiAxLjA4MywtMS4xNDUgMi4wMjMsLTIuNDI2IDIuNzcsLTMuODE1IEMgLTkuOTcyLDguMzg4IC05LjI2OCw2LjIyNyAtOC4xMzMsNC4yODcgLTYuODc2LDIuMTM4IC01LjE2MiwwLjY0MyAtMi43NTQsMCAtMS43OSwtMC4yNTcgLTAuOTY0LC0wLjI1NyAwLDAgWiIKICAgIHRyYW5zZm9ybT0ibWF0cml4KDIuNTk4MjAwODE0MzU4MDUxNSwgMCwgMCwgLTIuNTk4MjAwODE0MzU4MDUxNSwgMjYxLjYzOTk2MzAxNjM3OTYsIDIzOS42MTIyMjk0MzUwNjQzNikiIC8+Cjwvc3ZnPg=='
+    const IC = {
+      dash: '<rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/>',
+      file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/>',
+      settings: '<path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/>',
+      tag: '<path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
+      calendar: '<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+      chart: '<path d="M18 20V10M12 20V4M6 20v-6"/>',
+      download: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>',
+      upload: '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>',
+      trash: '<path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6"/>',
+      save: '<path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/>',
+      logout: '<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>',
+      printer: '<path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/>',
+      plus: '<path d="M12 5v14M5 12h14"/>', edit: '<path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>'
+    }
+    const ic = n => `<svg class="i" viewBox="0 0 24 24">${IC[n] || ''}</svg>`
+    document.querySelectorAll('[data-i]').forEach(e => e.outerHTML = ic(e.dataset.i))
+    document.querySelectorAll('img.lg').forEach(i => i.src = LOGO)
+    const CATS = ['DIURNO', 'NOTURNO', 'PLANTÃO']
+    const MES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
+    let U = null, draft = { id: null, items: [] }, FER = [], PRODS = []
+
+    await db.exec(`
+CREATE TABLE IF NOT EXISTS tabelas_preco(id SERIAL PRIMARY KEY,nome TEXT UNIQUE NOT NULL);
+CREATE TABLE IF NOT EXISTS precos(id SERIAL PRIMARY KEY,tabela_id INT REFERENCES tabelas_preco(id) ON DELETE CASCADE,produto TEXT,tipo TEXT,preco1 NUMERIC(10,2),preco2 NUMERIC(10,2));
+CREATE TABLE IF NOT EXISTS usuarios(id SERIAL PRIMARY KEY,login TEXT UNIQUE NOT NULL,senha TEXT NOT NULL,nome TEXT,tabela_preco_id INT REFERENCES tabelas_preco(id) ON DELETE SET NULL);
+CREATE TABLE IF NOT EXISTS feriados(id SERIAL PRIMARY KEY,tipo TEXT,nome TEXT,data TEXT);
+CREATE TABLE IF NOT EXISTS orcamentos(id SERIAL PRIMARY KEY,usuario_id INT REFERENCES usuarios(id),cliente TEXT,funcionario TEXT,tabela_preco_id INT,valor_total NUMERIC(12,2) DEFAULT 0,valor_recebido NUMERIC(12,2) DEFAULT 0,data_ultimo_recebimento TEXT,criado_em TEXT);
+CREATE TABLE IF NOT EXISTS itens_orcamento(id SERIAL PRIMARY KEY,orcamento_id INT REFERENCES orcamentos(id) ON DELETE CASCADE,data TEXT,produto TEXT,tipo TEXT,preco NUMERIC(10,2),marca TEXT);
+CREATE TABLE IF NOT EXISTS recebimentos(id SERIAL PRIMARY KEY,orcamento_id INT REFERENCES orcamentos(id) ON DELETE CASCADE,valor NUMERIC(12,2),data TEXT);`)
+    if (!(await q('SELECT 1 FROM usuarios LIMIT 1')).length) {
+      const t = (await q("INSERT INTO tabelas_preco(nome) VALUES('Nova tabelas') RETURNING id"))[0].id
+      await q("INSERT INTO precos(tabela_id,produto,tipo,preco1,preco2) VALUES($1,'24 h','Plantão Domiciliar',185,200),($1,'12 h','Plantão Domiciliar',100,115)", [t])
+      
+      const login = prompt('Informe o usuário:');
+      const nome = login.trim().charAt(0).toUpperCase() + login.trim().slice(1);
+      const senha = prompt('Informe a senha:');
+
+      if (login?.trim() && senha?.trim()) {
+        await q("INSERT INTO usuarios(login,senha,nome,tabela_preco_id) VALUES($1,$2,$3,$4)", [login.trim(), senha, nome, t])
+      }
+
+
+      await q("INSERT INTO feriados(tipo,nome,data) VALUES('nacional','Nossa Sra. Aparecida','2025-10-12'),('nacional','Natal','2025-12-25'),('nacional','Ano Novo','2025-01-01')")
+    }
+
+    await db.exec(`ALTER TABLE usuarios ADD COLUMN IF NOT EXISTS pode_cadastrar BOOLEAN;
+ALTER TABLE tabelas_preco ADD COLUMN IF NOT EXISTS categoria TEXT DEFAULT 'DIURNO';
+ALTER TABLE orcamentos ADD COLUMN IF NOT EXISTS codigo TEXT;
+CREATE UNIQUE INDEX IF NOT EXISTS orc_codigo_uq ON orcamentos(codigo);
+UPDATE usuarios SET pode_cadastrar=true WHERE login='ricardo' AND pode_cadastrar IS NULL;`)
+    /* codigo unico: 4 letras A-Z + 2 numeros 4-9 embaralhados + categoria + ultima data (ex.: K7QX5B diurno 17out) */
+    const rndUid = () => {
+      const L = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', a = []; for (let i = 0; i < 4; i++)a.push(L[Math.random() * 26 | 0]); for (let i = 0; i < 2; i++)a.push(String(4 + (Math.random() * 6 | 0)))
+      for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0;[a[i], a[j]] = [a[j], a[i]] }; return a.join('')
+    }
+    async function mkCodigo(tabId, items, uid) {
+      const t = (await q('SELECT categoria FROM tabelas_preco WHERE id=$1', [tabId]))[0], d = items.map(i => i.data).sort().pop() || today()
+      if (!uid) { do { uid = rndUid() } while ((await q('SELECT 1 FROM orcamentos WHERE codigo LIKE $1', [uid + ' %'])).length) }
+      return `${uid} ${(t?.categoria || 'DIURNO').toLowerCase()} ${+d.slice(8)}${MES[+d.slice(5, 7) - 1]}`
+    }
+    for (const o of await q('SELECT id,tabela_preco_id,criado_em FROM orcamentos WHERE codigo IS NULL')) {
+      const it = await q('SELECT data FROM itens_orcamento WHERE orcamento_id=$1', [o.id])
+      await q('UPDATE orcamentos SET codigo=$1 WHERE id=$2', [await mkCodigo(o.tabela_preco_id, it.length ? it : [{ data: o.criado_em }]), o.id])
+    }
+
+    /* ---------- Auth ---------- */
+    let mode = 'login'
+    W.openAuth = m => { $('modal').classList.remove('hide'); authTab(m) }
+    W.authTab = m => { mode = m; $('fn').classList.toggle('hide', m !== 'reg'); $('bl').className = m === 'login' ? '' : 's'; $('br').className = m === 'reg' ? '' : 's'; $('a_err').textContent = '' }
+    W.submitAuth = async () => {
+      const l = $('a_login').value.trim().toLowerCase(), s = $('a_senha').value, n = $('a_nome').value.trim()
+      if (!l || !s) return $('a_err').textContent = 'Informe usuário e senha.'
+      if (mode === 'reg') {
+        if (!n) return $('a_err').textContent = 'Informe seu nome.'
+        if ((await q('SELECT 1 FROM usuarios WHERE login=$1', [l])).length) return $('a_err').textContent = 'Usuário já existe.'
+        let nome = n, i = 1; while ((await q('SELECT 1 FROM tabelas_preco WHERE nome=$1', [nome])).length) nome = n + ' ' + (++i)
+        const t = (await q('INSERT INTO tabelas_preco(nome) VALUES($1) RETURNING id', [nome]))[0].id
+        await q('INSERT INTO usuarios(login,senha,nome,tabela_preco_id) VALUES($1,$2,$3,$4)', [l, s, n, t])
+      }
+      const u = (await q('SELECT * FROM usuarios WHERE login=$1 AND senha=$2', [l, s]))[0]
+      if (!u) return $('a_err').textContent = 'Usuário ou senha inválidos.'
+      U = u; $('modal').classList.add('hide'); enter()
+    }
+    W.logout = () => { U = null; $('app').classList.add('hide'); $('land').classList.remove('hide') }
+    async function enter() {
+      $('land').classList.add('hide'); $('app').classList.remove('hide'); $('who').textContent = 'Olá, ' + U.nome
+      $('r_de').value = today().slice(0, 8) + '01'; $('r_ate').value = today()
+      await loadFer(); tab('dash'); newOrc()
+    }
+    document.querySelectorAll('.sb [data-t]').forEach(b => b.onclick = () => tab(b.dataset.t))
+    async function tab(t) {
+      document.querySelectorAll('.sb [data-t]').forEach(b => b.classList.toggle('on', b.dataset.t === t))
+        ;['dash', 'orc', 'cfg'].forEach(x => $('t-' + x).classList.toggle('hide', x !== t))
+      if (t === 'dash') { cards(); relatorio() }
+      if (t === 'orc') await fillTabs('o_tab', draft.tab || U.tabela_preco_id).then(loadProdutos)
+      if (t === 'cfg') {
+        $('p_nome').value = U.nome; await fillTabs('p_tab', U.tabela_preco_id); await fillTabs('c_tab'); listPrecos(); listFer()
+        $('cfg-users').classList.toggle('hide', !U.pode_cadastrar); if (U.pode_cadastrar) { await fillTabs('u_tab'); listUsers() }
+      }
+    }
+    async function fillTabs(id, sel) {
+      const cur = sel ?? $(id).value, r = await q('SELECT * FROM tabelas_preco ORDER BY nome')
+      $(id).innerHTML = r.map(x => `<option value="${x.id}">${esc(x.nome)}</option>`).join(''); if (cur) $(id).value = cur
+    }
+
+    /* ---------- Feriados / preço ---------- */
+    async function loadFer() { FER = await q('SELECT * FROM feriados ORDER BY data') }
+    const isFer = d => FER.some(f => f.tipo === 'outro' ? f.data === d : f.data.slice(5) === d.slice(5))
+    const wd = d => new Date(d + 'T12:00:00').getDay()
+    const isEsp = d => [0, 5, 6].includes(wd(d)) || isFer(d)
+    W.listFer = async () => { await loadFer(); $('c_fer').innerHTML = FER.map(f => `<tr><td>${esc(f.tipo)}</td><td>${esc(f.nome)}</td><td>${fd(f.data)}</td><td><button class="d sm" onclick="delFer(${f.id})">${ic('trash')}</button></td></tr>`).join('') || '<tr><td colspan=4 class=mut>Nenhum feriado</td></tr>' }
+    W.addFer = async () => {
+      const n = $('f_nome').value.trim(), d = $('f_data').value; if (!n || !d) return alert('Informe nome e data.')
+      await q('INSERT INTO feriados(tipo,nome,data) VALUES($1,$2,$3)', [$('f_tipo').value, n, d]); $('f_nome').value = ''; listFer()
+    }
+    W.delFer = async id => { await q('DELETE FROM feriados WHERE id=$1', [id]); listFer() }
+
+    /* ---------- Config ---------- */
+    W.saveProfile = async () => {
+      await q('UPDATE usuarios SET nome=$1,tabela_preco_id=$2 WHERE id=$3', [$('p_nome').value, +$('p_tab').value, U.id])
+      U = (await q('SELECT * FROM usuarios WHERE id=$1', [U.id]))[0]; $('who').textContent = 'Olá, ' + U.nome; alert('Perfil salvo.')
+    }
+    W.newTab = async () => {
+      const n = prompt('Nome da nova tabela de preço:'); if (!n) return
+      try { const r = await q('INSERT INTO tabelas_preco(nome) VALUES($1) RETURNING id', [n.trim()]); await fillTabs('c_tab', r[0].id); listPrecos() } catch (e) { alert('Nome já existe.') }
+    }
+    W.delTab = async () => {
+      const id = +$('c_tab').value; if (!id || !confirm('Excluir esta tabela e seus preços?')) return
+      await q('DELETE FROM tabelas_preco WHERE id=$1', [id]); U = (await q('SELECT * FROM usuarios WHERE id=$1', [U.id]))[0]; tab('cfg')
+    }
+    W.listPrecos = async () => {
+      const id = +$('c_tab').value; if (!id) { $('c_precos').innerHTML = ''; return }
+      $('c_cat').value = (await q('SELECT categoria FROM tabelas_preco WHERE id=$1', [id]))[0]?.categoria || 'DIURNO'
+      const r = await q('SELECT * FROM precos WHERE tabela_id=$1 ORDER BY id', [id])
+      $('c_precos').innerHTML = r.map(p => `<tr><td>${esc(p.produto)}</td><td>${esc(p.tipo)}</td><td>${brl(p.preco1)}</td><td>${brl(p.preco2)}</td><td><button class="d sm" onclick="delPreco(${p.id})">${ic('trash')}</button></td></tr>`).join('') || '<tr><td colspan=5 class=mut>Sem preços</td></tr>'
+    }
+    W.saveCat = async () => { await q('UPDATE tabelas_preco SET categoria=$1 WHERE id=$2', [$('c_cat').value, +$('c_tab').value]) }
+    W.addPreco = async () => {
+      const id = +$('c_tab').value, p = $('c_prod').value.trim(); if (!id || !p) return alert('Informe a tabela e o produto.')
+      await q('INSERT INTO precos(tabela_id,produto,tipo,preco1,preco2) VALUES($1,$2,$3,$4,$5)', [id, p, $('c_tipo').value.trim(), +$('c_p1').value || 0, +$('c_p2').value || 0])
+        ;['c_prod', 'c_tipo', 'c_p1', 'c_p2'].forEach(i => $(i).value = ''); listPrecos()
+    }
+    W.delPreco = async id => { await q('DELETE FROM precos WHERE id=$1', [id]); listPrecos() }
+    function dl(b, n) { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = n; document.body.appendChild(a); a.click(); a.remove() }
+    const readTxt = async inp => { const f = inp.files[0]; if (!f) return null; const t = (await f.text()).replace(/^\uFEFF/, ''); inp.value = ''; return { f, t } }
+    const num = v => +String(v).trim().replace(',', '.')
+    W.exportTxt = async () => {
+      const id = +$('c_tab').value, o = (await q('SELECT * FROM tabelas_preco WHERE id=$1', [id]))[0]; if (!o) return alert('Selecione uma tabela.')
+      const r = await q('SELECT * FROM precos WHERE tabela_id=$1 ORDER BY id', [id])
+      dl(new Blob(['#categoria;' + o.categoria + '\n' + r.map(p => [p.produto, p.tipo, p.preco1, p.preco2].join(';')).join('\n')], { type: 'text/plain' }), `tabela_${o.nome}.txt`)
+    }
+    W.importTxt = async inp => {
+      const x = await readTxt(inp); if (!x) return
+      const nome = prompt('Nome da tabela de destino (nova ou existente):', x.f.name.replace(/\.txt$/i, '').replace(/^tabela_/, '')); if (!nome) return
+      let t = (await q('SELECT id FROM tabelas_preco WHERE nome=$1', [nome.trim()]))[0]
+      if (!t) t = (await q('INSERT INTO tabelas_preco(nome) VALUES($1) RETURNING id', [nome.trim()]))[0]
+      else if (confirm('A tabela já existe. OK = substituir os preços; Cancelar = acrescentar.')) await q('DELETE FROM precos WHERE tabela_id=$1', [t.id])
+      let n = 0
+      for (const l of x.t.split(/\r?\n/)) {
+        const c = l.split(/[;\t]/)
+        if (/^#categoria/i.test(l)) { const k = (c[1] || '').trim().toUpperCase().replace('PLANTAO', 'PLANTÃO'); if (CATS.includes(k)) await q('UPDATE tabelas_preco SET categoria=$1 WHERE id=$2', [k, t.id]); continue }
+        if (c.length < 4) continue
+        const a = num(c[2]), b = num(c[3]); if (isNaN(a) || isNaN(b)) continue
+        await q('INSERT INTO precos(tabela_id,produto,tipo,preco1,preco2) VALUES($1,$2,$3,$4,$5)', [t.id, c[0].trim(), c[1].trim(), a, b]); n++
+      }
+      await fillTabs('c_tab', t.id); listPrecos(); alert(n + ' registros importados.')
+    }
+
+    /* ---------- Usuários ---------- */
+    const yes = v => ['1', 'sim', 's', 'true', 'x'].includes(String(v || '').trim().toLowerCase())
+    W.listUsers = async () => {
+      const r = await q('SELECT u.*,t.nome tab FROM usuarios u LEFT JOIN tabelas_preco t ON t.id=u.tabela_preco_id ORDER BY u.id')
+      $('c_users').innerHTML = r.map(u => `<tr><td>${esc(u.login)}</td><td>${esc(u.nome)}</td><td>${esc(u.tab || '')}</td><td>${u.pode_cadastrar ? 'Sim' : 'Não'}</td><td>${u.id === U.id ? '' : `<button class="d sm" onclick="delUser(${u.id})">${ic('trash')}</button>`}</td></tr>`).join('')
+    }
+    W.addUser = async () => {
+      const n = $('u_nome').value.trim(), l = $('u_login').value.trim().toLowerCase(), sn = $('u_senha').value
+      if (!n || !l || !sn) return alert('Informe nome, usuário e senha.')
+      if ((await q('SELECT 1 FROM usuarios WHERE login=$1', [l])).length) return alert('Usuário já existe.')
+      await q('INSERT INTO usuarios(login,senha,nome,tabela_preco_id,pode_cadastrar) VALUES($1,$2,$3,$4,$5)', [l, sn, n, +$('u_tab').value || null, $('u_perm').value === '1'])
+        ;['u_nome', 'u_login', 'u_senha'].forEach(i => $(i).value = ''); $('u_perm').value = '0'; listUsers()
+    }
+    W.delUser = async id => {
+      if (!confirm('Excluir este usuário?')) return
+      try { await q('DELETE FROM usuarios WHERE id=$1', [id]) } catch (e) { alert('Não é possível excluir: o usuário possui orçamentos.') }; listUsers()
+    }
+    W.exportUsers = async () => {
+      const r = await q('SELECT u.*,t.nome tab FROM usuarios u LEFT JOIN tabelas_preco t ON t.id=u.tabela_preco_id ORDER BY u.id')
+      dl(new Blob([r.map(u => [u.login, u.senha, u.nome, u.tab || '', u.pode_cadastrar ? 1 : 0].join(';')).join('\n')], { type: 'text/plain' }), 'usuarios.txt')
+    }
+    W.importUsers = async inp => {
+      const x = await readTxt(inp); if (!x) return; let n = 0
+      for (const l of x.t.split(/\r?\n/)) {
+        const c = l.split(';').map(v => v.trim()); if (c.length < 3 || !c[0] || c[0][0] === '#') continue
+        const login = c[0].toLowerCase(), nome = c[2] || login, tn = c[3] || nome
+        let t = (await q('SELECT id FROM tabelas_preco WHERE nome=$1', [tn]))[0]
+        if (!t) t = (await q('INSERT INTO tabelas_preco(nome) VALUES($1) RETURNING id', [tn]))[0]
+        const ex = (await q('SELECT id FROM usuarios WHERE login=$1', [login]))[0], pm = yes(c[4])
+        if (ex) await q('UPDATE usuarios SET senha=$1,nome=$2,tabela_preco_id=$3,pode_cadastrar=$4 WHERE id=$5', [c[1], nome, t.id, pm, ex.id])
+        else await q('INSERT INTO usuarios(login,senha,nome,tabela_preco_id,pode_cadastrar) VALUES($1,$2,$3,$4,$5)', [login, c[1], nome, t.id, pm])
+        n++
+      }
+      U = (await q('SELECT * FROM usuarios WHERE id=$1', [U.id]))[0]; await fillTabs('u_tab'); listUsers(); alert(n + ' usuários importados.')
+    }
+
+    /* ---------- Orçamento ---------- */
+    W.loadProdutos = async () => {
+      PRODS = await q('SELECT * FROM precos WHERE tabela_id=$1 ORDER BY id', [+$('o_tab').value])
+      $('o_prod').innerHTML = PRODS.map(p => `<option value="${p.id}">${esc(p.produto)} — ${esc(p.tipo)}</option>`).join('')
+    }
+    W.newOrc = () => {
+      draft = { id: null, items: [], tab: null }; $('orcTitle').textContent = 'Novo orçamento'; $('o_cli').value = ''; $('o_fun').value = U.nome; $('o_data').value = today(); drawItens()
+      if (!$('t-orc').classList.contains('hide')) fillTabs('o_tab', U.tabela_preco_id).then(loadProdutos)
+    }
+    W.addItem = () => {
+      const d = $('o_data').value, p = PRODS.find(x => x.id == $('o_prod').value); if (!d || !p) return alert('Informe a data e o produto.')
+      const esp = isEsp(d), marca = isFer(d) ? 'FER' : esp ? 'DDD' : ''
+      draft.items.push({ data: d, produto: p.produto, tipo: p.tipo, preco: Number(esp ? p.preco2 : p.preco1), marca })
+      draft.items.sort((a, b) => a.data.localeCompare(b.data)); drawItens()
+    }
+    W.delItem = i => { draft.items.splice(i, 1); drawItens() }
+    function drawItens() {
+      $('o_itens').innerHTML = draft.items.map((it, i) => `<tr><td>${fd(it.data)} <span class="mut">${DIAS[wd(it.data)]}</span></td><td>${esc(it.produto)}</td><td>${esc(it.tipo)}</td><td>${brl(it.preco)}</td><td>${it.marca ? `<span class="tag ${it.marca === 'FER' ? 'f' : ''}">${it.marca}</span>` : ''}</td><td><button class="d sm" onclick="delItem(${i})">${ic('trash')}</button></td></tr>`).join('') || '<tr><td colspan=6 class=mut>Nenhum item adicionado</td></tr>'
+      $('o_total').textContent = brl(draft.items.reduce((s, i) => s + i.preco, 0))
+    }
+    W.saveOrc = async () => {
+      const c = $('o_cli').value.trim(); if (!c) return alert('Informe o nome do cliente.'); if (!draft.items.length) return alert('Adicione ao menos um item.')
+      const tot = draft.items.reduce((s, i) => s + i.preco, 0), f = $('o_fun').value.trim(), tb = +$('o_tab').value
+      let id = draft.id, uid = null
+      if (id) uid = ((await q('SELECT codigo FROM orcamentos WHERE id=$1', [id]))[0]?.codigo || '').split(' ')[0] || null
+      const cod = await mkCodigo(tb, draft.items, uid)
+      if (id) { await q('UPDATE orcamentos SET cliente=$1,funcionario=$2,tabela_preco_id=$3,valor_total=$4,codigo=$6 WHERE id=$5', [c, f, tb, tot, id, cod]); await q('DELETE FROM itens_orcamento WHERE orcamento_id=$1', [id]) }
+      else id = (await q('INSERT INTO orcamentos(usuario_id,cliente,funcionario,tabela_preco_id,valor_total,criado_em,codigo) VALUES($1,$2,$3,$4,$5,$6,$7) RETURNING id', [U.id, c, f, tb, tot, today(), cod]))[0].id
+      for (const i of draft.items) await q('INSERT INTO itens_orcamento(orcamento_id,data,produto,tipo,preco,marca) VALUES($1,$2,$3,$4,$5,$6)', [id, i.data, i.produto, i.tipo, i.preco, i.marca])
+      newOrc(); tab('dash')
+    }
+
+    /* ---------- Dashboard ---------- */
+    async function cards() {
+      const r = await q(`SELECT o.*,(SELECT count(*) FROM itens_orcamento WHERE orcamento_id=o.id) n FROM orcamentos o WHERE usuario_id=$1 ORDER BY id DESC`, [U.id])
+      $('cards').innerHTML = r.map(o => {
+        const rest = o.valor_total - o.valor_recebido; return `<div class="card"><b>${esc(o.cliente)}</b> <span class="tag">${esc(o.codigo)}</span><div class="mut">Funcionário: ${esc(o.funcionario)} · ${o.n} dia(s)</div><br>
+  <div class="mut">Total</div><div class="big">${brl(o.valor_total)}</div>
+  <div class="mut">Recebido <b class="ok">${brl(o.valor_recebido)}</b> · Restante <b class="${rest > 0 ? 'er' : 'ok'}">${brl(rest)}</b></div>
+  <div class="mut">Último recebimento: ${fd(o.data_ultimo_recebimento)}</div><br>
+  <div class="row" style="gap:6px"><button class="sm" onclick="receber(${o.id})">${ic('plus')} Receber</button><button class="s sm" onclick="editOrc(${o.id})">${ic('edit')} Editar</button><button class="s sm" onclick="pdf(${o.id})">${ic('file')} PDF</button><button class="d sm" onclick="delOrc(${o.id})">${ic('trash')}</button></div></div>`
+      }).join('') || '<p class="mut">Nenhum orçamento ainda. Crie um na aba Orçamento.</p>'
+    }
+    W.receber = async id => {
+      const v = prompt('Valor recebido (R$):'); const n = +String(v || '').replace(',', '.'); if (!n) return
+      const d = prompt('Data do recebimento (AAAA-MM-DD):', today()); if (!/^\d{4}-\d{2}-\d{2}$/.test(d || '')) return alert('Data inválida.')
+      await q('INSERT INTO recebimentos(orcamento_id,valor,data) VALUES($1,$2,$3)', [id, n, d])
+      await q('UPDATE orcamentos SET valor_recebido=(SELECT COALESCE(SUM(valor),0) FROM recebimentos WHERE orcamento_id=$1),data_ultimo_recebimento=(SELECT MAX(data) FROM recebimentos WHERE orcamento_id=$1) WHERE id=$1', [id])
+      cards(); relatorio()
+    }
+    W.editOrc = async id => {
+      const o = (await q('SELECT * FROM orcamentos WHERE id=$1', [id]))[0]
+      const it = await q('SELECT * FROM itens_orcamento WHERE orcamento_id=$1 ORDER BY data', [id])
+      draft = { id, tab: o.tabela_preco_id, items: it.map(i => ({ data: i.data, produto: i.produto, tipo: i.tipo, preco: Number(i.preco), marca: i.marca })) }
+      await tab('orc'); $('orcTitle').textContent = 'Editar orçamento #' + id; $('o_cli').value = o.cliente; $('o_fun').value = o.funcionario; $('o_tab').value = o.tabela_preco_id; await loadProdutos(); drawItens()
+    }
+    W.delOrc = async id => { if (confirm('Excluir orçamento?')) { await q('DELETE FROM orcamentos WHERE id=$1', [id]); cards(); relatorio() } }
+
+    /* ---------- Relatório ---------- */
+    W.relatorio = async () => {
+      const de = $('r_de').value || '0000-01-01', ate = $('r_ate').value || '9999-12-31'
+      const os = await q(`SELECT o.* FROM orcamentos o WHERE usuario_id=$1 AND EXISTS(SELECT 1 FROM itens_orcamento i WHERE i.orcamento_id=o.id AND i.data BETWEEN $2 AND $3) ORDER BY id`, [U.id, de, ate])
+      let T = 0, R = 0, h = `<p class="mut">Período: ${fd($('r_de').value)} a ${fd($('r_ate').value)} · ${esc(U.nome)}</p>`
+      for (const o of os) {
+        const it = await q('SELECT * FROM itens_orcamento WHERE orcamento_id=$1 ORDER BY data', [o.id]); T += +o.valor_total; R += +o.valor_recebido
+        h += `<div class="card" style="margin-bottom:10px;break-inside:avoid"><b>${esc(o.cliente)}</b> <span class="tag">${esc(o.codigo)}</span> <span class="mut">— Total ${brl(o.valor_total)} · Recebido ${brl(o.valor_recebido)} · Restante ${brl(o.valor_total - o.valor_recebido)}</span>
+    <div class="tw"><table><tbody>${it.map(i => `<tr><td>${fd(i.data)} ${DIAS[wd(i.data)]}</td><td>${esc(i.produto)}</td><td>${brl(i.preco)}</td><td>${i.marca}</td></tr>`).join('')}</tbody></table></div></div>`
+      }
+      if (!os.length) h += '<p class="mut">Nenhum orçamento no período.</p>'
+      h += `<div class="card"><h3>Resumo</h3><div class="row"><div>Valor total<div class="big">${brl(T)}</div></div><div>Valor recebido<div class="big ok">${brl(R)}</div></div><div>Valor restante<div class="big er">${brl(T - R)}</div></div></div></div>`
+      $('rel').innerHTML = h
+    }
+
+    /* ---------- PDF ---------- */
+    W.pdf = async id => {
+      const o = (await q('SELECT * FROM orcamentos WHERE id=$1', [id]))[0], it = await q('SELECT * FROM itens_orcamento WHERE orcamento_id=$1 ORDER BY data', [id])
+      const { jsPDF } = W.jspdf, d = new jsPDF(), L = 15; let y = 20
+      const logo = await new Promise(r => { const im = new Image(); im.onload = () => { const c = document.createElement('canvas'); c.width = 400; c.height = Math.round(400 * (im.naturalHeight || 350) / (im.naturalWidth || 398)); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); r({ u: c.toDataURL('image/png'), w: c.width, h: c.height }) }; im.onerror = () => r(null); im.src = LOGO })
+      if (logo) d.addImage(logo.u, 'PNG', L, 12, 24, 24 * logo.h / logo.w)
+      d.setFontSize(18); d.text('Arte de Cuidar - Orçamento', logo ? L + 30 : L, y + 6); y += 24
+      d.setFontSize(11); d.text('Código: ' + o.codigo, L, y); y += 7; d.text('Cliente: ' + o.cliente, L, y); y += 7; d.text('Responsável: ' + o.funcionario, L, y); y += 7
+      d.text('Período: ' + fd(it[0]?.data) + ' a ' + fd(it[it.length - 1]?.data), L, y); y += 12
+      d.setFont(undefined, 'bold'); d.text('Data', L, y); d.text('Período', 60, y); d.text('Obs.', 110, y); d.text('Valor', 160, y); d.line(L, y + 2, 195, y + 2); y += 9; d.setFont(undefined, 'normal')
+      for (const i of it) {
+        if (y > 270) { d.addPage(); y = 20 }
+        d.text(fd(i.data) + ' ' + DIAS[wd(i.data)], L, y); d.text(i.produto, 60, y); d.text(i.marca || '', 110, y); d.text(brl(i.preco).replace(/\s/g, ' '), 160, y); y += 7
+      }
+      d.line(L, y, 195, y); y += 8; d.setFont(undefined, 'bold'); d.text('Total: ' + brl(o.valor_total).replace(/\s/g, ' '), 160 - 10, y)
+      d.save('orcamento_' + o.cliente.replace(/\W+/g, '_') + '.pdf')
+    }
+  </script>
+</body>
+
+</html>
